@@ -5,11 +5,6 @@ jobs:
     docker:
       - image: circleci/node:12.7.0-buster
       - image: circleci/mongo:4.0.11-xenial
-        environment:
-          MONGO_INITDB_ROOT_USERNAME: root
-          MONGO_INITDB_ROOT_PASSWORD: root
-          MONGO_INITDB_ADMIN_USERNAME: admin
-          MONGO_INITDB_ADMIN_PASSWORD: admin
     steps:
       - checkout
       - run:
